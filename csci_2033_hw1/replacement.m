@@ -23,7 +23,7 @@ function B = replacement(A, i, j, s)
     % NOTE: Ugly method to index array returned by a funciton without first
     % assigning it to a variable, will not use here
     % https://stackoverflow.com/questions/3627107/how-can-i-index-a-matlab-array-returned-by-a-function-without-first-assigning-it
-    scaled_A = scaling(A, j, s) 
-    A(i, :) = A(i, :) + scaled_A(j, :) 
-    B = A
+    scaled_A = scaling(A, j, s);
+    A(i, :) = A(i, :) + scaled_A(j, :);
+    B = A;
 end
